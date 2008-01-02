@@ -12,6 +12,7 @@ Patch0: xmds-stupid-configure.patch
 License:GPL 
 Group:Sciences/Other 
 Url: http://www.xmds.org/  
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: fftw2-devel
 Requires:fftw2-devel
  
