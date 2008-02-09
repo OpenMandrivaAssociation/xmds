@@ -1,5 +1,5 @@
 %define name xmds
-%define realversion 1.5-3
+%define realversion 1.6.4
 %define version %( echo %realversion | sed 's/-/_/g' )
 %define release %mkrel 1
 
@@ -7,8 +7,7 @@ Summary: eXtensible multi-dimensional Simulator
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{realversion}.tar.bz2
-Patch0: xmds-stupid-configure.patch
+Source0: %{name}-%{realversion}.tar.gz
 License:GPL 
 Group:Sciences/Other 
 Url: http://www.xmds.org/  
@@ -24,7 +23,6 @@ done in your architecture.
  
 %prep
 %setup -q -n %name-%realversion
-%patch -p0
 
 %build
 %configure
