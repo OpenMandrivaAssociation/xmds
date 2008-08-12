@@ -1,5 +1,5 @@
 %define name xmds
-%define realversion 1.6.4
+%define realversion 1.6.6
 %define version %( echo %realversion | sed 's/-/_/g' )
 %define release %mkrel 1
 
