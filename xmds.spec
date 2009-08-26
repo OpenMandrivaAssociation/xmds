@@ -1,7 +1,7 @@
 %define name xmds
 %define realversion 1.6.6
 %define version %( echo %realversion | sed 's/-/_/g' )
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: eXtensible multi-dimensional Simulator 
 Name: %{name}
@@ -12,8 +12,8 @@ License:GPL
 Group:Sciences/Other 
 Url: http://www.xmds.org/  
 BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: fftw2-devel
-Requires:fftw2-devel
+BuildRequires: fftw-devel
+#Requires:fftw2-devel
  
 %description
 XMDS is a code generator that integrates equations. You write them down in
@@ -25,15 +25,16 @@ done in your architecture.
 %setup -q -n %name-%realversion
 
 %build
-%configure
+%configure2_5x --enable-fftw3
+	     
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
