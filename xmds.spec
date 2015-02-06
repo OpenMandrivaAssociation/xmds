@@ -1,7 +1,7 @@
 %define name xmds
 %define realversion 1.6.6
 %define version %( echo %realversion | sed 's/-/_/g' )
-%define release %mkrel 2
+%define release 3
 
 Summary: eXtensible multi-dimensional Simulator 
 Name: %{name}
