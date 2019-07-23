@@ -5,8 +5,8 @@
 
 Summary: eXtensible multi-dimensional Simulator 
 Name: %{name}
-Version: %{version}
-Release: %{release}
+Version:	3.0.0
+Release:	1
 Source0: %{name}-%{realversion}.tar.gz
 License:GPL 
 Group:Sciences/Other 
