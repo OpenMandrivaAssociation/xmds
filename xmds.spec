@@ -10,7 +10,7 @@ Release:	1
 Source0: %{name}-%{realversion}.tar.gz
 License:GPL 
 Group:Sciences/Other 
-Url: http://www.xmds.org/  
+Url: https://www.xmds.org/  
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: fftw-devel
 #Requires:fftw2-devel
