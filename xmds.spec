@@ -12,6 +12,11 @@ License:GPL
 Group:Sciences/Other 
 Url: https://www.xmds.org/  
 BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: fftw-devel
 #Requires:fftw2-devel
  
